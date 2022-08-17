@@ -9,7 +9,7 @@ for i in s:
 for i in s:
     d1[i]+=1
 
-#for string 2
+#for string two
 for i in t:
     d2[i]=0
 for i in t:

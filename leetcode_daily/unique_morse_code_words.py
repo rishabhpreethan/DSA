@@ -7,3 +7,5 @@ for i in words:
         s+=d[j]
     l.append(s)
 print(len(set(l)))
+d=defaultdict(list)
+print(d)

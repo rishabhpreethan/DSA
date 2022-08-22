@@ -22,7 +22,7 @@
 # 3. 2 steps + 1 step
 
 
-def climbStairs(self,n):
+def climbStairs(n):
         # base case - reached last stair
         if n==0:
             return 1
@@ -30,6 +30,6 @@ def climbStairs(self,n):
             return 0
 
         #allowed to take one or two steps at a time
-        return self.climbStairs(n-1)+self.climbStairs(n-2)
+        return climbStairs(n-1)+climbStairs(n-2)
 
-print(climbStairs(self,3))
+print(climbStairs(3))

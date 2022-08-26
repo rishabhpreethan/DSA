@@ -1,3 +1,5 @@
+#EASY
+
 d={}
 s='leetcode'
 for i in s:

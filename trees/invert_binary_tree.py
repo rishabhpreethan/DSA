@@ -17,6 +17,7 @@
 # Output: []
 
 
+
 def invertTree(self, root):
         if root:
             self.invertTree(root.right)

@@ -18,20 +18,14 @@
 # Output: false
 
 
-from itertools import permutations
+from collections import Counter
 
 def checkInclusion(s1,s2):
-    words = [''.join(p) for p in permutations(s1)]
-    # print(words)
-    l=0
-    r=len(s1)
-    while r<=len(s2):
-        # print('l,r: ',l,r)
-        if s2[l:r] in words:
+    w=len(s1)
+    s1c=Counter(s1)
+    for i in range(len(s2)-w+1):
+        s2c=Counter(s2[i:i+w])
+        if s2c==s1c:
             return True
-        else:
-            l+=1
-            r+=1
-    return False
 
 print(checkInclusion("ab","eidbaooo"))

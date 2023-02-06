@@ -24,13 +24,10 @@
 
 def shuffle(nums,n):
     nl=[]
-    l=len(nums)
-    mid=int(l/2)
-    n1=nums[0:mid]
-    n2=nums[mid:]
-    # print(n1,n2)
-    le=len(n1)
-    for i in range(le):
+    n1=nums[0:n]
+    n2=nums[n:]
+    l=len(n1)
+    for i in range(l):
         nl.append(n1[i])
         nl.append(n2[i])
     return nl
